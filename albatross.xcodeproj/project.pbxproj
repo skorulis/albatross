@@ -13,6 +13,22 @@
 		2643568F1641C87A0035E24A /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 2643568D1641C87A0035E24A /* Ship.m */; };
 		264356921641D2370035E24A /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 264356911641D2370035E24A /* ship.png */; };
 		264356931641D2370035E24A /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 264356911641D2370035E24A /* ship.png */; };
+		2643569616429E840035E24A /* InputLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2643569516429E840035E24A /* InputLayer.m */; };
+		2643569716429E840035E24A /* InputLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2643569516429E840035E24A /* InputLayer.m */; };
+		2643569C16429F130035E24A /* fire-button-idle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2643569816429F130035E24A /* fire-button-idle.png */; };
+		2643569D16429F130035E24A /* fire-button-idle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2643569816429F130035E24A /* fire-button-idle.png */; };
+		2643569E16429F130035E24A /* fire-button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2643569916429F130035E24A /* fire-button-pressed.png */; };
+		2643569F16429F130035E24A /* fire-button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2643569916429F130035E24A /* fire-button-pressed.png */; };
+		264356A016429F130035E24A /* joystick-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2643569A16429F130035E24A /* joystick-back.png */; };
+		264356A116429F130035E24A /* joystick-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2643569A16429F130035E24A /* joystick-back.png */; };
+		264356A216429F130035E24A /* joystick-stick.png in Resources */ = {isa = PBXBuildFile; fileRef = 2643569B16429F130035E24A /* joystick-stick.png */; };
+		264356A316429F130035E24A /* joystick-stick.png in Resources */ = {isa = PBXBuildFile; fileRef = 2643569B16429F130035E24A /* joystick-stick.png */; };
+		264356A61642A4A10035E24A /* MainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356A51642A4A10035E24A /* MainLayer.m */; };
+		264356A71642A4A10035E24A /* MainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356A51642A4A10035E24A /* MainLayer.m */; };
+		264356AB1642A5240035E24A /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356AA1642A5240035E24A /* Util.m */; };
+		264356AC1642A5240035E24A /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356AA1642A5240035E24A /* Util.m */; };
+		264356C01642A5A10035E24A /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356BF1642A5A10035E24A /* Log.m */; };
+		264356C11642A5A10035E24A /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356BF1642A5A10035E24A /* Log.m */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -60,6 +76,18 @@
 		2643568C1641C87A0035E24A /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
 		2643568D1641C87A0035E24A /* Ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ship.m; sourceTree = "<group>"; };
 		264356911641D2370035E24A /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+		2643569416429E840035E24A /* InputLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputLayer.h; path = layers/InputLayer.h; sourceTree = "<group>"; };
+		2643569516429E840035E24A /* InputLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputLayer.m; path = layers/InputLayer.m; sourceTree = "<group>"; };
+		2643569816429F130035E24A /* fire-button-idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire-button-idle.png"; sourceTree = "<group>"; };
+		2643569916429F130035E24A /* fire-button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire-button-pressed.png"; sourceTree = "<group>"; };
+		2643569A16429F130035E24A /* joystick-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joystick-back.png"; sourceTree = "<group>"; };
+		2643569B16429F130035E24A /* joystick-stick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joystick-stick.png"; sourceTree = "<group>"; };
+		264356A41642A4A10035E24A /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainLayer.h; path = layers/MainLayer.h; sourceTree = "<group>"; };
+		264356A51642A4A10035E24A /* MainLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainLayer.m; path = layers/MainLayer.m; sourceTree = "<group>"; };
+		264356A91642A5240035E24A /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		264356AA1642A5240035E24A /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		264356BE1642A5A10035E24A /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		264356BF1642A5A10035E24A /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -149,8 +177,12 @@
 		264356851641C7750035E24A /* layers */ = {
 			isa = PBXGroup;
 			children = (
+				2643569416429E840035E24A /* InputLayer.h */,
+				2643569516429E840035E24A /* InputLayer.m */,
 				264356801641C64A0035E24A /* GameLayer.h */,
 				264356811641C64A0035E24A /* GameLayer.m */,
+				264356A41642A4A10035E24A /* MainLayer.h */,
+				264356A51642A4A10035E24A /* MainLayer.m */,
 			);
 			name = layers;
 			sourceTree = "<group>";
@@ -167,9 +199,24 @@
 		264356901641D2370035E24A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2643569816429F130035E24A /* fire-button-idle.png */,
+				2643569916429F130035E24A /* fire-button-pressed.png */,
+				2643569A16429F130035E24A /* joystick-back.png */,
+				2643569B16429F130035E24A /* joystick-stick.png */,
 				264356911641D2370035E24A /* ship.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		264356A81642A50F0035E24A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				264356A91642A5240035E24A /* Util.h */,
+				264356AA1642A5240035E24A /* Util.m */,
+				264356BE1642A5A10035E24A /* Log.h */,
+				264356BF1642A5A10035E24A /* Log.m */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		DCC1A0D613A94EC0005BD75D = {
@@ -259,6 +306,7 @@
 		DCC1A38C13A94F1A005BD75D /* Projectfiles */ = {
 			isa = PBXGroup;
 			children = (
+				264356A81642A50F0035E24A /* util */,
 				2643568B1641C86F0035E24A /* entities */,
 				264356851641C7750035E24A /* layers */,
 				DCC1A38D13A94F1A005BD75D /* AppDelegate.h */,
@@ -384,6 +432,10 @@
 				DC27219F160CADFF00D88944 /* Default-568h@2x.png in Resources */,
 				DC2721A8160CAFA600D88944 /* iTunesArtwork in Resources */,
 				264356921641D2370035E24A /* ship.png in Resources */,
+				2643569C16429F130035E24A /* fire-button-idle.png in Resources */,
+				2643569E16429F130035E24A /* fire-button-pressed.png in Resources */,
+				264356A016429F130035E24A /* joystick-back.png in Resources */,
+				264356A216429F130035E24A /* joystick-stick.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +449,10 @@
 				DCC1A3B013A94F1A005BD75D /* config.lua in Resources */,
 				DC21B88F1511079900FD4891 /* fps_images.png in Resources */,
 				264356931641D2370035E24A /* ship.png in Resources */,
+				2643569D16429F130035E24A /* fire-button-idle.png in Resources */,
+				2643569F16429F130035E24A /* fire-button-pressed.png in Resources */,
+				264356A116429F130035E24A /* joystick-back.png in Resources */,
+				264356A316429F130035E24A /* joystick-stick.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +467,10 @@
 				DCC1A3AD13A94F1A005BD75D /* main.m in Sources */,
 				264356821641C64A0035E24A /* GameLayer.m in Sources */,
 				2643568E1641C87A0035E24A /* Ship.m in Sources */,
+				2643569616429E840035E24A /* InputLayer.m in Sources */,
+				264356A61642A4A10035E24A /* MainLayer.m in Sources */,
+				264356AB1642A5240035E24A /* Util.m in Sources */,
+				264356C01642A5A10035E24A /* Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +482,10 @@
 				DCC1A3AE13A94F1A005BD75D /* main.m in Sources */,
 				264356831641C64A0035E24A /* GameLayer.m in Sources */,
 				2643568F1641C87A0035E24A /* Ship.m in Sources */,
+				2643569716429E840035E24A /* InputLayer.m in Sources */,
+				264356A71642A4A10035E24A /* MainLayer.m in Sources */,
+				264356AC1642A5240035E24A /* Util.m in Sources */,
+				264356C11642A5A10035E24A /* Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
