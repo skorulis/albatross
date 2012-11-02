@@ -1,0 +1,3 @@
+[submodule "Projectfiles/util"]
+	path = Projectfiles/util
+	url = https://github.com/skorulis/iosUtils.git
