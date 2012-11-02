@@ -16,4 +16,6 @@
 @property (nonatomic,strong) Ship* ship;
 @property (nonatomic, strong) InputLayer* inputLayer;
 
+@property (nonatomic, strong) NSMutableArray* asteroids;
+
 @end

@@ -29,6 +29,8 @@
 		264356AC1642A5240035E24A /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356AA1642A5240035E24A /* Util.m */; };
 		264356C01642A5A10035E24A /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356BF1642A5A10035E24A /* Log.m */; };
 		264356C11642A5A10035E24A /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356BF1642A5A10035E24A /* Log.m */; };
+		264356C41642A7550035E24A /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356C31642A7550035E24A /* Asteroid.m */; };
+		264356C51642A7550035E24A /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356C31642A7550035E24A /* Asteroid.m */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -88,6 +90,8 @@
 		264356AA1642A5240035E24A /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		264356BE1642A5A10035E24A /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		264356BF1642A5A10035E24A /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		264356C21642A7550035E24A /* Asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asteroid.h; sourceTree = "<group>"; };
+		264356C31642A7550035E24A /* Asteroid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asteroid.m; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 			children = (
 				2643568C1641C87A0035E24A /* Ship.h */,
 				2643568D1641C87A0035E24A /* Ship.m */,
+				264356C21642A7550035E24A /* Asteroid.h */,
+				264356C31642A7550035E24A /* Asteroid.m */,
 			);
 			path = entities;
 			sourceTree = "<group>";
@@ -471,6 +477,7 @@
 				264356A61642A4A10035E24A /* MainLayer.m in Sources */,
 				264356AB1642A5240035E24A /* Util.m in Sources */,
 				264356C01642A5A10035E24A /* Log.m in Sources */,
+				264356C41642A7550035E24A /* Asteroid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +493,7 @@
 				264356A71642A4A10035E24A /* MainLayer.m in Sources */,
 				264356AC1642A5240035E24A /* Util.m in Sources */,
 				264356C11642A5A10035E24A /* Log.m in Sources */,
+				264356C51642A7550035E24A /* Asteroid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
