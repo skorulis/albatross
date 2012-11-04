@@ -12,7 +12,9 @@
 
 - (id) init {
     self = [super initWithFile:@"ship.png"];
-    
+    self.acc = 50;
+    self.maxVel = 150;
+    self.vel = [Vec2f new];
     return self;
 }
 

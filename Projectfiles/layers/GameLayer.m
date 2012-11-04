@@ -32,7 +32,12 @@
 -(void) update:(ccTime)delta
 {
     CGPoint vel = self.inputLayer.joystick.velocity;
-    self.ship.position = CGPointMake(self.ship.position.x+vel.x, self.ship.position.y + vel.y);
+    self.ship.vel.x+= vel.x*delta*self.ship.acc;
+    self.ship.vel.y+=vel.y*delta*self.ship.acc;
+    
+    self.ship.position = CGPointMake(self.ship.position.x+self.ship.vel.x*delta, self.ship.position.y + +self.ship.vel.y*delta);
+    
+    
     
     for(Asteroid* a in self.asteroids) {
         

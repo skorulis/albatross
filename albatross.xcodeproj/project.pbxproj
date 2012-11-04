@@ -25,10 +25,6 @@
 		264356A316429F130035E24A /* joystick-stick.png in Resources */ = {isa = PBXBuildFile; fileRef = 2643569B16429F130035E24A /* joystick-stick.png */; };
 		264356A61642A4A10035E24A /* MainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356A51642A4A10035E24A /* MainLayer.m */; };
 		264356A71642A4A10035E24A /* MainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356A51642A4A10035E24A /* MainLayer.m */; };
-		264356AB1642A5240035E24A /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356AA1642A5240035E24A /* Util.m */; };
-		264356AC1642A5240035E24A /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356AA1642A5240035E24A /* Util.m */; };
-		264356C01642A5A10035E24A /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356BF1642A5A10035E24A /* Log.m */; };
-		264356C11642A5A10035E24A /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356BF1642A5A10035E24A /* Log.m */; };
 		264356C41642A7550035E24A /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356C31642A7550035E24A /* Asteroid.m */; };
 		264356C51642A7550035E24A /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356C31642A7550035E24A /* Asteroid.m */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
@@ -70,6 +66,10 @@
 		DCC1A3B013A94F1A005BD75D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A39513A94F1A005BD75D /* config.lua */; };
 		DCF95CD213A97EC500AE3B80 /* libcocos2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF95CC913A97EC500AE3B80 /* libcocos2d-mac.a */; };
 		DCF95CD413A97EC500AE3B80 /* libkobold2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF95CCB13A97EC500AE3B80 /* libkobold2d-mac.a */; };
+		FABF669816444EF6005A2950 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669416444EF6005A2950 /* Log.m */; };
+		FABF669916444EF6005A2950 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669416444EF6005A2950 /* Log.m */; };
+		FABF669A16444EF6005A2950 /* Vec2f.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669716444EF6005A2950 /* Vec2f.m */; };
+		FABF669B16444EF6005A2950 /* Vec2f.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669716444EF6005A2950 /* Vec2f.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,10 +86,6 @@
 		2643569B16429F130035E24A /* joystick-stick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joystick-stick.png"; sourceTree = "<group>"; };
 		264356A41642A4A10035E24A /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainLayer.h; path = layers/MainLayer.h; sourceTree = "<group>"; };
 		264356A51642A4A10035E24A /* MainLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainLayer.m; path = layers/MainLayer.m; sourceTree = "<group>"; };
-		264356A91642A5240035E24A /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		264356AA1642A5240035E24A /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
-		264356BE1642A5A10035E24A /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
-		264356BF1642A5A10035E24A /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		264356C21642A7550035E24A /* Asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asteroid.h; sourceTree = "<group>"; };
 		264356C31642A7550035E24A /* Asteroid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asteroid.m; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
@@ -141,6 +137,10 @@
 		DCF95CCB13A97EC500AE3B80 /* libkobold2d-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libkobold2d-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFA90EF13B4F6F7009DD35A /* BuildSettings-Debug-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BuildSettings-Debug-iOS.xcconfig"; sourceTree = "<group>"; };
 		DCFA90F013B4F811009DD35A /* BuildSettings-Release-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BuildSettings-Release-iOS.xcconfig"; sourceTree = "<group>"; };
+		FABF669316444EF6005A2950 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		FABF669416444EF6005A2950 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		FABF669616444EF6005A2950 /* Vec2f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec2f.h; sourceTree = "<group>"; };
+		FABF669716444EF6005A2950 /* Vec2f.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vec2f.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,17 +212,6 @@
 				264356911641D2370035E24A /* ship.png */,
 			);
 			path = images;
-			sourceTree = "<group>";
-		};
-		264356A81642A50F0035E24A /* util */ = {
-			isa = PBXGroup;
-			children = (
-				264356A91642A5240035E24A /* Util.h */,
-				264356AA1642A5240035E24A /* Util.m */,
-				264356BE1642A5A10035E24A /* Log.h */,
-				264356BF1642A5A10035E24A /* Log.m */,
-			);
-			path = util;
 			sourceTree = "<group>";
 		};
 		DCC1A0D613A94EC0005BD75D = {
@@ -312,7 +301,7 @@
 		DCC1A38C13A94F1A005BD75D /* Projectfiles */ = {
 			isa = PBXGroup;
 			children = (
-				264356A81642A50F0035E24A /* util */,
+				FABF669116444EF6005A2950 /* util */,
 				2643568B1641C86F0035E24A /* entities */,
 				264356851641C7750035E24A /* layers */,
 				DCC1A38D13A94F1A005BD75D /* AppDelegate.h */,
@@ -353,6 +342,33 @@
 				DC9C33E813B5024400931BF2 /* BuildSettings-Mac.xcconfig */,
 			);
 			path = BuildSettings;
+			sourceTree = "<group>";
+		};
+		FABF669116444EF6005A2950 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				FABF669216444EF6005A2950 /* log */,
+				FABF669516444EF6005A2950 /* math */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		FABF669216444EF6005A2950 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				FABF669316444EF6005A2950 /* Log.h */,
+				FABF669416444EF6005A2950 /* Log.m */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		FABF669516444EF6005A2950 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				FABF669616444EF6005A2950 /* Vec2f.h */,
+				FABF669716444EF6005A2950 /* Vec2f.m */,
+			);
+			path = math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,9 +491,9 @@
 				2643568E1641C87A0035E24A /* Ship.m in Sources */,
 				2643569616429E840035E24A /* InputLayer.m in Sources */,
 				264356A61642A4A10035E24A /* MainLayer.m in Sources */,
-				264356AB1642A5240035E24A /* Util.m in Sources */,
-				264356C01642A5A10035E24A /* Log.m in Sources */,
 				264356C41642A7550035E24A /* Asteroid.m in Sources */,
+				FABF669816444EF6005A2950 /* Log.m in Sources */,
+				FABF669A16444EF6005A2950 /* Vec2f.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,9 +507,9 @@
 				2643568F1641C87A0035E24A /* Ship.m in Sources */,
 				2643569716429E840035E24A /* InputLayer.m in Sources */,
 				264356A71642A4A10035E24A /* MainLayer.m in Sources */,
-				264356AC1642A5240035E24A /* Util.m in Sources */,
-				264356C11642A5A10035E24A /* Log.m in Sources */,
 				264356C51642A7550035E24A /* Asteroid.m in Sources */,
+				FABF669916444EF6005A2950 /* Log.m in Sources */,
+				FABF669B16444EF6005A2950 /* Vec2f.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
