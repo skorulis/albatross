@@ -7,7 +7,8 @@
 //
 
 #import "CCSprite.h"
+#import "Entity.h"
 
-@interface Asteroid : CCSprite
+@interface Asteroid : Entity
 
 @end

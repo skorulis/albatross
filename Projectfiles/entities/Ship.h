@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "Vec2f.h"
+#import "Entity.h"
 
-@interface Ship : CCSprite
+@interface Ship : Entity
 
 @property (nonatomic) float acc;
 @property (nonatomic) float maxVel;
-@property (nonatomic,strong) Vec2f* vel;
 
 
 @end

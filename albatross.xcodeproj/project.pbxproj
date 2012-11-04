@@ -70,6 +70,8 @@
 		FABF669916444EF6005A2950 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669416444EF6005A2950 /* Log.m */; };
 		FABF669A16444EF6005A2950 /* Vec2f.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669716444EF6005A2950 /* Vec2f.m */; };
 		FABF669B16444EF6005A2950 /* Vec2f.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669716444EF6005A2950 /* Vec2f.m */; };
+		FABF669E164698C1005A2950 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669D164698C1005A2950 /* Entity.m */; };
+		FABF669F164698C1005A2950 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669D164698C1005A2950 /* Entity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +143,8 @@
 		FABF669416444EF6005A2950 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		FABF669616444EF6005A2950 /* Vec2f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec2f.h; sourceTree = "<group>"; };
 		FABF669716444EF6005A2950 /* Vec2f.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vec2f.m; sourceTree = "<group>"; };
+		FABF669C164698C1005A2950 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		FABF669D164698C1005A2950 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,8 @@
 				2643568D1641C87A0035E24A /* Ship.m */,
 				264356C21642A7550035E24A /* Asteroid.h */,
 				264356C31642A7550035E24A /* Asteroid.m */,
+				FABF669C164698C1005A2950 /* Entity.h */,
+				FABF669D164698C1005A2950 /* Entity.m */,
 			);
 			path = entities;
 			sourceTree = "<group>";
@@ -494,6 +500,7 @@
 				264356C41642A7550035E24A /* Asteroid.m in Sources */,
 				FABF669816444EF6005A2950 /* Log.m in Sources */,
 				FABF669A16444EF6005A2950 /* Vec2f.m in Sources */,
+				FABF669E164698C1005A2950 /* Entity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +517,7 @@
 				264356C51642A7550035E24A /* Asteroid.m in Sources */,
 				FABF669916444EF6005A2950 /* Log.m in Sources */,
 				FABF669B16444EF6005A2950 /* Vec2f.m in Sources */,
+				FABF669F164698C1005A2950 /* Entity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
