@@ -12,14 +12,9 @@
 
 - (id) init {
     self = [super initWithFile:@"joystick-stick.png"];
-    [self scheduleUpdate];
     self.position = CGPointMake(100, 100);
+    [self commonInit];
     return self;
-}
-
--(void) update:(ccTime)delta {
-    self.position = CGPointMake(self.position.x+(32*delta), self.position.y+(32*delta));
-    
 }
 
 @end

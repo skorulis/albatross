@@ -14,7 +14,7 @@
     self = [super initWithFile:@"ship.png"];
     self.acc = 150;
     self.maxVel = 150;
-    self.vel = [Vec2f new];
+    [self commonInit];
     return self;
 }
 

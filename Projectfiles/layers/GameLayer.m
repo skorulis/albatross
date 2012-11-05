@@ -24,7 +24,7 @@
     
     self.inputLayer = [[InputLayer alloc] init];
     
-    [self addChild:self.inputLayer];
+    [self addChild:self.inputLayer z:1];
     
     float width = MAX(self.contentSize.width,self.contentSize.height);
     float height = MIN(self.contentSize.width,self.contentSize.height);
@@ -44,9 +44,10 @@
     
     [self moveEntity:self.ship delta:delta];
     
-    
+    Vec2f* shipLoc = self.ship.loc;
     for(Asteroid* a in self.asteroids) {
-        
+        [self accelEntity:a towards:shipLoc delta:delta];
+        [self moveEntity:a delta:delta];
     }
     
 }
@@ -60,8 +61,14 @@
     self.ship.vel.y += self.kInput.acceleration.smoothedY * self.ship.acc;
 }
 
+- (void)accelEntity:(Entity*)e towards:(Vec2f*)pos delta:(ccTime)delta {
+    Vec2f* dir = [pos minus:e.loc].normaliseE;
+    [dir multE:2000*delta];
+    e.vel = dir;
+}
+
 - (void) moveEntity:(Entity*)e delta:(ccTime)delta {
-    DLog(@"Width %f %f",self.box.size.width,self.box.size.height);
+    NSAssert(e.vel!=nil,@"Attempt to move entity without velocity");
     e.position = CGPointMake(e.position.x + e.vel.x*delta, e.position.y + e.vel.y*delta);
     if( (e.position.x <= 0 && e.vel.x < 0)  || (e.position.x > self.box.size.width && e.vel.x > 0)) {
         e.vel.x*=-1;
