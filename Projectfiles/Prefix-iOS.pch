@@ -22,6 +22,7 @@
 #import <GameKit/GameKit.h>
 #import <iAd/iAd.h>
 #import <UIKit/UIKit.h>
+#import "Log.h"
 
 // Cocos2D headers
 #import "cocos2d.h"

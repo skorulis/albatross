@@ -10,6 +10,7 @@
 #import "InputLayer.h"
 #import "Ship.h"
 #import "Asteroid.h"
+#import "Log.h"
 
 @implementation GameLayer
 
@@ -22,8 +23,16 @@
     self.asteroids = [NSMutableArray new];
     
     self.inputLayer = [[InputLayer alloc] init];
+    
     [self addChild:self.inputLayer];
-
+    
+    float width = MAX(self.contentSize.width,self.contentSize.height);
+    float height = MIN(self.contentSize.width,self.contentSize.height);
+    self.box = CGRectMake(0, 0, width, height);
+    self.kInput = [KKInput sharedInput];
+    self.kInput.accelerometerActive = self.kInput.accelerometerAvailable;
+    self.kInput.gyroActive = self.kInput.gyroAvailable;
+    
     [self scheduleUpdate];
     [self addAsteroid];
     return self;
@@ -31,9 +40,7 @@
 
 -(void) update:(ccTime)delta
 {
-    CGPoint vel = self.inputLayer.joystick.velocity;
-    self.ship.vel.x+= vel.x*delta*self.ship.acc;
-    self.ship.vel.y+=vel.y*delta*self.ship.acc;
+    [self checkInput:delta];
     
     [self moveEntity:self.ship delta:delta];
     
@@ -44,12 +51,22 @@
     
 }
 
+- (void) checkInput:(ccTime)delta {
+    CGPoint vel = self.inputLayer.joystick.velocity;
+    self.ship.vel.x+= vel.x*delta*self.ship.acc;
+    self.ship.vel.y+= vel.y*delta*self.ship.acc;
+    
+    self.ship.vel.x += self.kInput.acceleration.smoothedX * self.ship.acc;
+    self.ship.vel.y += self.kInput.acceleration.smoothedY * self.ship.acc;
+}
+
 - (void) moveEntity:(Entity*)e delta:(ccTime)delta {
+    DLog(@"Width %f %f",self.box.size.width,self.box.size.height);
     e.position = CGPointMake(e.position.x + e.vel.x*delta, e.position.y + e.vel.y*delta);
-    if( (e.position.x <= 0 && e.vel.x < 0)  || (e.position.x > self.contentSize.width && e.vel.x > 0)) {
+    if( (e.position.x <= 0 && e.vel.x < 0)  || (e.position.x > self.box.size.width && e.vel.x > 0)) {
         e.vel.x*=-1;
     }
-    if( (e.position.y <= 0 && e.vel.y < 0)  || (e.position.y > self.contentSize.height && e.vel.y > 0)) {
+    if( (e.position.y <= 0 && e.vel.y < 0)  || (e.position.y > self.box.size.height && e.vel.y > 0)) {
         e.vel.y*=-1;
     }
 }
