@@ -19,6 +19,7 @@
 
 - (void) setLoc:(Vec2f *)l {
     loc = l;
+    self.position = CGPointMake(loc.x, loc.y);
 }
 
 - (Vec2f*) loc {

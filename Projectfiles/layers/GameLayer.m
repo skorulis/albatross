@@ -11,6 +11,7 @@
 #import "Ship.h"
 #import "Asteroid.h"
 #import "Log.h"
+#import "Random.h"
 
 @implementation GameLayer
 
@@ -34,7 +35,8 @@
     self.kInput.gyroActive = self.kInput.gyroAvailable;
     
     [self scheduleUpdate];
-    [self addAsteroid];
+    [self spawnAsteroid];
+    [self spawnAsteroid];
     return self;
 }
 
@@ -79,10 +81,18 @@
 }
 
 
-- (void) addAsteroid {
+- (void) spawnAsteroid {
     Asteroid* a = [[Asteroid alloc] init];
+    a.loc = [self randomPosition];
     [self addChild:a];
     [self.asteroids addObject:a];
+}
+
+- (Vec2f*) randomPosition {
+    Vec2f* ret = [Vec2f new];
+    ret.x = randDM(self.box.size.width);
+    ret.y = randDM(self.box.size.height);
+    return ret;
 }
 
 @end
