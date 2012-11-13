@@ -12,8 +12,5 @@
 
 @interface Ship : Entity
 
-@property (nonatomic) float acc;
-@property (nonatomic) float maxVel;
-
 
 @end

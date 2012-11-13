@@ -12,7 +12,8 @@
 
 - (id) init {
     self = [super initWithFile:@"joystick-stick.png"];
-    self.position = CGPointMake(100, 100);
+    self.acc = 100;
+    self.maxVel = 50;
     [self commonInit];
     return self;
 }

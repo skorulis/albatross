@@ -65,12 +65,13 @@
 
 - (void)accelEntity:(Entity*)e towards:(Vec2f*)pos delta:(ccTime)delta {
     Vec2f* dir = [pos minus:e.loc].normaliseE;
-    [dir multE:2000*delta];
-    e.vel = dir;
+    [e.vel addE:dir mult:e.acc*delta];
 }
 
 - (void) moveEntity:(Entity*)e delta:(ccTime)delta {
     NSAssert(e.vel!=nil,@"Attempt to move entity without velocity");
+    [e.vel clampE:e.maxVel];
+    
     e.position = CGPointMake(e.position.x + e.vel.x*delta, e.position.y + e.vel.y*delta);
     if( (e.position.x <= 0 && e.vel.x < 0)  || (e.position.x > self.box.size.width && e.vel.x > 0)) {
         e.vel.x*=-1;
