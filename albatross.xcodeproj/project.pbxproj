@@ -74,6 +74,8 @@
 		FABF669F164698C1005A2950 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669D164698C1005A2950 /* Entity.m */; };
 		FAC626251652D942000FDB50 /* Random.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC626241652D942000FDB50 /* Random.m */; };
 		FAC626261652D942000FDB50 /* Random.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC626241652D942000FDB50 /* Random.m */; };
+		FAC626291652E0FD000FDB50 /* Powerup.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC626281652E0FD000FDB50 /* Powerup.m */; };
+		FAC6262A1652E0FD000FDB50 /* Powerup.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC626281652E0FD000FDB50 /* Powerup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +151,8 @@
 		FABF669D164698C1005A2950 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		FAC626231652D942000FDB50 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
 		FAC626241652D942000FDB50 /* Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Random.m; sourceTree = "<group>"; };
+		FAC626271652E0FD000FDB50 /* Powerup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Powerup.h; sourceTree = "<group>"; };
+		FAC626281652E0FD000FDB50 /* Powerup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Powerup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,8 @@
 				264356C31642A7550035E24A /* Asteroid.m */,
 				FABF669C164698C1005A2950 /* Entity.h */,
 				FABF669D164698C1005A2950 /* Entity.m */,
+				FAC626271652E0FD000FDB50 /* Powerup.h */,
+				FAC626281652E0FD000FDB50 /* Powerup.m */,
 			);
 			path = entities;
 			sourceTree = "<group>";
@@ -508,6 +514,7 @@
 				FABF669A16444EF6005A2950 /* Vec2f.m in Sources */,
 				FABF669E164698C1005A2950 /* Entity.m in Sources */,
 				FAC626251652D942000FDB50 /* Random.m in Sources */,
+				FAC626291652E0FD000FDB50 /* Powerup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +533,7 @@
 				FABF669B16444EF6005A2950 /* Vec2f.m in Sources */,
 				FABF669F164698C1005A2950 /* Entity.m in Sources */,
 				FAC626261652D942000FDB50 /* Random.m in Sources */,
+				FAC6262A1652E0FD000FDB50 /* Powerup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

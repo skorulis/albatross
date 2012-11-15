@@ -12,6 +12,7 @@
 #import "Asteroid.h"
 #import "Log.h"
 #import "Random.h"
+#import "Powerup.h"
 
 @implementation GameLayer
 
@@ -87,6 +88,12 @@
     a.loc = [self randomPosition];
     [self addChild:a];
     [self.asteroids addObject:a];
+}
+
+- (void) spawnPowerup {
+    Powerup* p = [[Powerup alloc] init];
+    p.loc = [self randomPosition];
+    [self addChild:p];
 }
 
 - (Vec2f*) randomPosition {
