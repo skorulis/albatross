@@ -104,17 +104,17 @@
     e.position = CGPointMake(e.position.x + e.vel.x*delta, e.position.y + e.vel.y*delta);
     if(e.position.x - e.size.width/2 <= 0 && e.vel.x < 0) {
         e.vel.x*=-1;
-        e.loc.x = e.size.width/2;
+        e.loc = [Vec2f vec:e.size.width y:e.loc.y];
     } else if(e.position.x + e.size.width/2 > self.box.size.width && e.vel.x > 0) {
         e.vel.x*=-1;
-        e.loc.x = self.box.size.width - e.size.width/2;
+        e.loc = [Vec2f vec:self.box.size.width - e.size.width/2 y:e.loc.y];
     }
     if( (e.position.y - e.size.height/2 <= 0 && e.vel.y < 0)  ) {
         e.vel.y*=-1;
-        e.loc.y = e.size.height/2;
+        e.loc = [Vec2f vec:e.loc.x y:e.size.height/2];
     } else if(e.position.y + e.size.height/2 > self.box.size.height && e.vel.y > 0) {
         e.vel.y*=-1;
-        e.loc.y = self.box.size.height - e.size.height/2;
+        e.loc = [Vec2f vec:e.loc.x y:self.box.size.height - e.size.height/2];
     }
 }
 
