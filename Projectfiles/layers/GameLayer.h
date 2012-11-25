@@ -18,6 +18,7 @@
 @property (nonatomic, strong) KKInput* kInput;
 
 @property (nonatomic, strong) NSMutableArray* asteroids;
+@property (nonatomic, strong) NSMutableArray* powerups;
 @property (nonatomic) CGRect box;
 
 @end

@@ -68,6 +68,7 @@
 		DCF95CD413A97EC500AE3B80 /* libkobold2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF95CCB13A97EC500AE3B80 /* libkobold2d-mac.a */; };
 		FA117A25165C21580041EEBF /* CCScale9Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = FA117A24165C21580041EEBF /* CCScale9Sprite.m */; };
 		FA117A26165C21580041EEBF /* CCScale9Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = FA117A24165C21580041EEBF /* CCScale9Sprite.m */; };
+		FA5F05F3166253C400FCCE8F /* powerup-plain.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5F05F2166253C400FCCE8F /* powerup-plain.png */; };
 		FA80B868166127F8007E2917 /* game-background.png in Resources */ = {isa = PBXBuildFile; fileRef = FA80B867166127F8007E2917 /* game-background.png */; };
 		FABF669816444EF6005A2950 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669416444EF6005A2950 /* Log.m */; };
 		FABF669916444EF6005A2950 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669416444EF6005A2950 /* Log.m */; };
@@ -149,6 +150,7 @@
 		FA117A23165C21580041EEBF /* CCScale9Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScale9Sprite.h; sourceTree = "<group>"; };
 		FA117A24165C21580041EEBF /* CCScale9Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCScale9Sprite.m; sourceTree = "<group>"; };
 		FA117A28165C25280041EEBF /* ARCMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCMacro.h; sourceTree = "<group>"; };
+		FA5F05F2166253C400FCCE8F /* powerup-plain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerup-plain.png"; sourceTree = "<group>"; };
 		FA80B867166127F8007E2917 /* game-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-background.png"; sourceTree = "<group>"; };
 		FABF669316444EF6005A2950 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		FABF669416444EF6005A2950 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		264356901641D2370035E24A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FA5F05F2166253C400FCCE8F /* powerup-plain.png */,
 				FA80B867166127F8007E2917 /* game-background.png */,
 				2643569816429F130035E24A /* fire-button-idle.png */,
 				2643569916429F130035E24A /* fire-button-pressed.png */,
@@ -496,6 +499,7 @@
 				264356A016429F130035E24A /* joystick-back.png in Resources */,
 				264356A216429F130035E24A /* joystick-stick.png in Resources */,
 				FA80B868166127F8007E2917 /* game-background.png in Resources */,
+				FA5F05F3166253C400FCCE8F /* powerup-plain.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

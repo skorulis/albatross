@@ -10,4 +10,11 @@
 
 @implementation Powerup
 
+- (id) init {
+    self = [super initWithFile:@"powerup-plain.png"];
+    [self commonInit];
+    return self;
+}
+
+
 @end

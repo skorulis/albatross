@@ -20,14 +20,15 @@
 - (id) init {
     self = [super init];
     self.ship = [[Ship alloc] init];
-    [self addChild:self.ship];
+    [self addChild:self.ship z:1];
     self.ship.position = CGPointMake(300, 300);
 
     self.asteroids = [NSMutableArray new];
+    self.powerups = [NSMutableArray new];
     
     self.inputLayer = [[InputLayer alloc] init];
     
-    [self addChild:self.inputLayer z:1];
+    [self addChild:self.inputLayer z:2];
     
     float width = MAX(self.contentSize.width,self.contentSize.height);
     float height = MIN(self.contentSize.width,self.contentSize.height);
@@ -49,6 +50,7 @@
     [self scheduleUpdate];
     [self spawnAsteroid];
     [self spawnAsteroid];
+    [self spawnPowerup];
     return self;
 }
 
@@ -64,6 +66,21 @@
         [self moveEntity:a delta:delta];
     }
     
+    Powerup* p = [self checkPowerupHit:self.ship];
+    if(p) {
+        [self.powerups removeObject:p];
+        [self removeChild:p cleanup:YES];
+    }
+    
+}
+
+- (Powerup*) checkPowerupHit:(Entity*)e {
+    for(Powerup* p in self.powerups) {
+        if([e.loc dist:p.loc] < p.contentSize.width/2 + e.contentSize.width/2) {
+            return p;
+        }
+    }
+    return nil;
 }
 
 - (void) checkInput:(ccTime)delta {
@@ -105,6 +122,7 @@
     Powerup* p = [[Powerup alloc] init];
     p.loc = [self randomPosition];
     [self addChild:p];
+    [self.powerups addObject:p];
 }
 
 - (Vec2f*) randomPosition {
