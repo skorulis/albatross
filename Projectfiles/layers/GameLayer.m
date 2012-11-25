@@ -13,6 +13,7 @@
 #import "Log.h"
 #import "Random.h"
 #import "Powerup.h"
+#import "CCScale9Sprite.h"
 
 @implementation GameLayer
 
@@ -34,6 +35,14 @@
     self.kInput = [KKInput sharedInput];
     self.kInput.accelerometerActive = self.kInput.accelerometerAvailable;
     self.kInput.gyroActive = self.kInput.gyroAvailable;
+    
+    
+    CCScale9Sprite* bg = [[CCScale9Sprite alloc] initWithFile:@"ship.png" capInsets:CGRectMake(10, 10, 20, 20)];
+
+    bg.position = CGPointMake(width/2, height/2);
+    bg.contentSize = CGSizeMake(width, height);
+    
+    [self addChild:bg z:-1];
     
     [self scheduleUpdate];
     [self spawnAsteroid];
@@ -74,10 +83,10 @@
     [e.vel clampE:e.maxVel];
     
     e.position = CGPointMake(e.position.x + e.vel.x*delta, e.position.y + e.vel.y*delta);
-    if( (e.position.x <= 0 && e.vel.x < 0)  || (e.position.x > self.box.size.width && e.vel.x > 0)) {
+    if( (e.position.x - e.size.width/2 <= 0 && e.vel.x < 0)  || (e.position.x + e.size.width/2 > self.box.size.width && e.vel.x > 0)) {
         e.vel.x*=-1;
     }
-    if( (e.position.y <= 0 && e.vel.y < 0)  || (e.position.y > self.box.size.height && e.vel.y > 0)) {
+    if( (e.position.y - e.size.height/2 <= 0 && e.vel.y < 0)  || (e.position.y + e.size.height/2 > self.box.size.height && e.vel.y > 0)) {
         e.vel.y*=-1;
     }
 }

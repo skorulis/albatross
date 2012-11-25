@@ -66,6 +66,9 @@
 		DCC1A3B013A94F1A005BD75D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A39513A94F1A005BD75D /* config.lua */; };
 		DCF95CD213A97EC500AE3B80 /* libcocos2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF95CC913A97EC500AE3B80 /* libcocos2d-mac.a */; };
 		DCF95CD413A97EC500AE3B80 /* libkobold2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF95CCB13A97EC500AE3B80 /* libkobold2d-mac.a */; };
+		FA117A25165C21580041EEBF /* CCScale9Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = FA117A24165C21580041EEBF /* CCScale9Sprite.m */; };
+		FA117A26165C21580041EEBF /* CCScale9Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = FA117A24165C21580041EEBF /* CCScale9Sprite.m */; };
+		FA80B868166127F8007E2917 /* game-background.png in Resources */ = {isa = PBXBuildFile; fileRef = FA80B867166127F8007E2917 /* game-background.png */; };
 		FABF669816444EF6005A2950 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669416444EF6005A2950 /* Log.m */; };
 		FABF669916444EF6005A2950 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669416444EF6005A2950 /* Log.m */; };
 		FABF669A16444EF6005A2950 /* Vec2f.m in Sources */ = {isa = PBXBuildFile; fileRef = FABF669716444EF6005A2950 /* Vec2f.m */; };
@@ -143,6 +146,10 @@
 		DCF95CCB13A97EC500AE3B80 /* libkobold2d-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libkobold2d-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFA90EF13B4F6F7009DD35A /* BuildSettings-Debug-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BuildSettings-Debug-iOS.xcconfig"; sourceTree = "<group>"; };
 		DCFA90F013B4F811009DD35A /* BuildSettings-Release-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BuildSettings-Release-iOS.xcconfig"; sourceTree = "<group>"; };
+		FA117A23165C21580041EEBF /* CCScale9Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScale9Sprite.h; sourceTree = "<group>"; };
+		FA117A24165C21580041EEBF /* CCScale9Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCScale9Sprite.m; sourceTree = "<group>"; };
+		FA117A28165C25280041EEBF /* ARCMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCMacro.h; sourceTree = "<group>"; };
+		FA80B867166127F8007E2917 /* game-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-background.png"; sourceTree = "<group>"; };
 		FABF669316444EF6005A2950 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		FABF669416444EF6005A2950 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		FABF669616444EF6005A2950 /* Vec2f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec2f.h; sourceTree = "<group>"; };
@@ -221,6 +228,7 @@
 		264356901641D2370035E24A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FA80B867166127F8007E2917 /* game-background.png */,
 				2643569816429F130035E24A /* fire-button-idle.png */,
 				2643569916429F130035E24A /* fire-button-pressed.png */,
 				2643569A16429F130035E24A /* joystick-back.png */,
@@ -360,9 +368,20 @@
 			path = BuildSettings;
 			sourceTree = "<group>";
 		};
+		FA117A22165C21580041EEBF /* cocos */ = {
+			isa = PBXGroup;
+			children = (
+				FA117A28165C25280041EEBF /* ARCMacro.h */,
+				FA117A23165C21580041EEBF /* CCScale9Sprite.h */,
+				FA117A24165C21580041EEBF /* CCScale9Sprite.m */,
+			);
+			path = cocos;
+			sourceTree = "<group>";
+		};
 		FABF669116444EF6005A2950 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				FA117A22165C21580041EEBF /* cocos */,
 				FABF669216444EF6005A2950 /* log */,
 				FABF669516444EF6005A2950 /* math */,
 			);
@@ -476,6 +495,7 @@
 				2643569E16429F130035E24A /* fire-button-pressed.png in Resources */,
 				264356A016429F130035E24A /* joystick-back.png in Resources */,
 				264356A216429F130035E24A /* joystick-stick.png in Resources */,
+				FA80B868166127F8007E2917 /* game-background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +535,7 @@
 				FABF669E164698C1005A2950 /* Entity.m in Sources */,
 				FAC626251652D942000FDB50 /* Random.m in Sources */,
 				FAC626291652E0FD000FDB50 /* Powerup.m in Sources */,
+				FA117A25165C21580041EEBF /* CCScale9Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +555,7 @@
 				FABF669F164698C1005A2950 /* Entity.m in Sources */,
 				FAC626261652D942000FDB50 /* Random.m in Sources */,
 				FAC6262A1652E0FD000FDB50 /* Powerup.m in Sources */,
+				FA117A26165C21580041EEBF /* CCScale9Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
