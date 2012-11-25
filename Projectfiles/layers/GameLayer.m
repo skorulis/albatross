@@ -37,10 +37,12 @@
     self.kInput.gyroActive = self.kInput.gyroAvailable;
     
     
-    CCScale9Sprite* bg = [[CCScale9Sprite alloc] initWithFile:@"ship.png" capInsets:CGRectMake(10, 10, 20, 20)];
+    //CCScale9Sprite* bg = [[CCScale9Sprite alloc] initWithFile:@"ship.png" capInsets:CGRectMake(10, 10, 20, 20)];
+    
+    CCSprite* bg = [[CCSprite alloc] initWithFile:@"game-background.png"];
 
     bg.position = CGPointMake(width/2, height/2);
-    bg.contentSize = CGSizeMake(width, height);
+    //bg.contentSize = CGSizeMake(width, height);
     
     [self addChild:bg z:-1];
     
