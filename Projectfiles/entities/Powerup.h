@@ -8,6 +8,14 @@
 
 #import "Entity.h"
 
+typedef enum {
+    kBulletType
+    
+    
+} PowerupType;
+
 @interface Powerup : Entity
+
+@property (nonatomic, assign) PowerupType type;
 
 @end

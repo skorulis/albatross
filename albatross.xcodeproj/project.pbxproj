@@ -27,6 +27,8 @@
 		264356A71642A4A10035E24A /* MainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356A51642A4A10035E24A /* MainLayer.m */; };
 		264356C41642A7550035E24A /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356C31642A7550035E24A /* Asteroid.m */; };
 		264356C51642A7550035E24A /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 264356C31642A7550035E24A /* Asteroid.m */; };
+		26D217BB1662C224000035BB /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D217BA1662C224000035BB /* Bullet.m */; };
+		26D217BC1662C224000035BB /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D217BA1662C224000035BB /* Bullet.m */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -98,6 +100,8 @@
 		264356A51642A4A10035E24A /* MainLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainLayer.m; path = layers/MainLayer.m; sourceTree = "<group>"; };
 		264356C21642A7550035E24A /* Asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asteroid.h; sourceTree = "<group>"; };
 		264356C31642A7550035E24A /* Asteroid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asteroid.m; sourceTree = "<group>"; };
+		26D217B91662C224000035BB /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		26D217BA1662C224000035BB /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 				FABF669D164698C1005A2950 /* Entity.m */,
 				FAC626271652E0FD000FDB50 /* Powerup.h */,
 				FAC626281652E0FD000FDB50 /* Powerup.m */,
+				26D217B91662C224000035BB /* Bullet.h */,
+				26D217BA1662C224000035BB /* Bullet.m */,
 			);
 			path = entities;
 			sourceTree = "<group>";
@@ -540,6 +546,7 @@
 				FAC626251652D942000FDB50 /* Random.m in Sources */,
 				FAC626291652E0FD000FDB50 /* Powerup.m in Sources */,
 				FA117A25165C21580041EEBF /* CCScale9Sprite.m in Sources */,
+				26D217BB1662C224000035BB /* Bullet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +567,7 @@
 				FAC626261652D942000FDB50 /* Random.m in Sources */,
 				FAC6262A1652E0FD000FDB50 /* Powerup.m in Sources */,
 				FA117A26165C21580041EEBF /* CCScale9Sprite.m in Sources */,
+				26D217BC1662C224000035BB /* Bullet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
